@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,k;
+    cin>>n;
+    cin>>k;
+    int c=0;
+    int ar[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>ar[i];
+    }
+    int m=ar[k-1];
+    for(int i=0;i<n;i++)
+    {
+        if(ar[i]>=m && ar[i]>0)
+            c++;
+    }
+    cout<<c;
+}
